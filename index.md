@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+## Введение
 
-You can use the [editor on GitHub](https://github.com/FlameLens/public-api/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Это публичное API flens.su (FlameLens)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Пользоваться нашим апи можно посредством отправления запросов на адрес https://api.flens.su
+В конец адреса передается название метода и его значение, в headers передается ваш токен.
 
-### Markdown
+### Авторизация
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Для получения токена разработчика необходимо зайти на любой сервер и ввести команду /api token generate.
+Чтобы выполнять запросы с токеном, необходимо передать его в HEADERS.
 
-```markdown
-Syntax highlighted code block
+### Лимит на количество запросов
 
-# Header 1
-## Header 2
-### Header 3
+При использовании API без токена, лимит запросов в мини. с одого IP составляет 60 запросов.
+При наличии токена лимит увеличивается до 200 запросов в мин. с одного IP.
 
-- Bulleted
-- List
+Если вам все равно этого недостаточно, свяжитесь с нами через [личные сообщения официального сообщества в ВК](vk.me/flamelens), для установки личного лимита.
 
-1. Numbered
-2. List
+### :hugs: Ошибки
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/FlameLens/public-api/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Код | Описание
+------------ | -------------
+-1 | Неизвестная ошибка
+1 | Информация не найдена
+2 | Метод не найден
+3 | Неверный токен 
+4 | Метод отключен
+5 | Не указаны обязательные значения метода (прочтите документацию)
