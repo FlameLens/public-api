@@ -1,3 +1,10 @@
+---
+layout: default
+title: PublicAPI 
+nav_order: 1
+permalink: /
+---
+
 ## Введение
 
 Это публичное API flens.su (FlameLens)
