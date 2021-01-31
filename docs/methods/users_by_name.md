@@ -7,12 +7,8 @@ nav_order: 4
 ---
 
 ### /users/name/:name 
-
 Coming soon
 {: .label .label-yellow }
-
-Doesn't work
-{: .label .label-red }
 
 Получает игрока по его игровому никнейму
 
