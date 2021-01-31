@@ -1,2 +1,5 @@
+title: Public API
+description: A FlameLens public api
+
 remote_theme: pmarsceill/just-the-docs
 footer_content: "Copyright 2021 FlameLens Network. MIT license.</a>"
